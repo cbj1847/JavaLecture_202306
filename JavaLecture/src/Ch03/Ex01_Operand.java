@@ -1,7 +1,5 @@
 package Ch03;
 
-import java.util.function.BiConsumer;
-
 public class Ex01_Operand {
 
 	public static void main(String[] args) {
