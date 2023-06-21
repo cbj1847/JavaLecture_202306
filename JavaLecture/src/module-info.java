@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author YONSAI
+ *
+ */
+module JavaLecture {
+}
