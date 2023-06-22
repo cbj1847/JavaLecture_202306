@@ -19,11 +19,11 @@ public class Ex04_Alarm {
 			timerH = Integer.parseInt(alarm.substring(0, 2)) - 1; 
 			timerM = Integer.parseInt(alarm.substring(2, 4)) + 15;
 			}
-		} else {
+		}else {
 			timerH = Integer.parseInt(alarm.substring(0, 2)); 
 			timerM = Integer.parseInt(alarm.substring(2, 4)) - 45;
 		}
-		System.out.printf("창영식 기상시간은 %d : %d", timerH, timerM);
+		System.out.printf("창영식 기상시간은 %02d : %02d", timerH, timerM);
 	}
 
 }

@@ -8,7 +8,7 @@ public class Ex03_AmericanAge {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		System.out.print("생년월일 입력(ex.19960109) >> ");
-		String birth = scan.nextLine();
+		String birth = scan.nextLine();					// String[] birth = scan.nextLine().split('-') <- Array
 		
 		LocalDate today = LocalDate.now();		
 		int a = today.getYear(), b = today.getMonthValue(), c = today.getDayOfMonth();
@@ -18,7 +18,7 @@ public class Ex03_AmericanAge {
 			age =  a - Integer.parseInt(birth.substring(0, 4));
 		}else {
 			age =  a - Integer.parseInt(birth.substring(0, 4)) - 1;
-		};
+		}
 		System.out.println("생년월일 : " + birth + " / 만 나이 : " + age);
 	}
 
