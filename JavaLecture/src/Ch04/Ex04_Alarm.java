@@ -10,6 +10,7 @@ public class Ex04_Alarm {
 		String alarm = scan.nextLine();
 		int timerH = 0;
 		int timerM = 0;
+		scan.close();
 		
 		if (Integer.parseInt(alarm.substring(2, 4)) - 45 < 0) {
 			if (Integer.parseInt(alarm.substring(0, 2)) == 0) {

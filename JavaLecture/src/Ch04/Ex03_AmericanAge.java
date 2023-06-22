@@ -9,6 +9,7 @@ public class Ex03_AmericanAge {
 		Scanner scan = new Scanner(System.in);
 		System.out.print("생년월일 입력(ex.19960109) >> ");
 		String birth = scan.nextLine();					// String[] birth = scan.nextLine().split('-') <- Array
+		scan.close();
 		
 		LocalDate today = LocalDate.now();		
 		int a = today.getYear(), b = today.getMonthValue(), c = today.getDayOfMonth();

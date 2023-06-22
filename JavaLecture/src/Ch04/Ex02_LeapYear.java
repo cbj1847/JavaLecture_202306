@@ -9,7 +9,8 @@ public class Ex02_LeapYear {
 		Scanner scan = new Scanner(System.in);
 		System.out.print("연도입력 >> ");
 		int year = Integer.parseInt(scan.nextLine());
-				
+		scan.close();
+		
 		if ((year % 400) == 0)
 			System.out.println(year + "년은 윤년입니다.");
 		else if ((year % 100) == 0)
