@@ -13,7 +13,7 @@ public class Ex02_Array {
 			sum += score[i];
 		}
 		System.out.println("평균 : " + (double)sum/score.length);
-		
+		 
 		// 배열 생성
 		// 생성하면서 값을 지정하는 경우
 		int[] intArray = {4, 67, 8, 91, 23};					// *** 자주사용

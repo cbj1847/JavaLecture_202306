@@ -10,8 +10,8 @@ public class Ex07_Enum {
 		System.out.println(date.name());
 		System.out.println(date.ordinal());
 		
-		LocalDate today = LocalDate.now();
-		System.out.println(today.getDayOfWeek().ordinal());
+		LocalDate today = LocalDate.now(); 
+		System.out.println(today.getDayOfWeek()); 	// 열거타입
 	}
 
 }

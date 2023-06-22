@@ -8,7 +8,7 @@ public class Ex01_Reference {
 		
 		// 참조형 : 배열, 열거, 클래스, 인터페이스
 		int a = 10, b = 10;
-		System.out.println(a == b);
+		System.out.println(a == b); 
 		
 		String ref1 = "자바";
 		String ref2 = "자바";
