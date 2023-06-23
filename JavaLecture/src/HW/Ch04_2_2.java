@@ -1,4 +1,4 @@
-package HW;
+package hw;
 
 public class Ch04_2_2 {
 

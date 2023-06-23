@@ -1,4 +1,4 @@
-package Ch04;
+package ch04;
 
 public class Ex13_NestedForLoop {
 

@@ -1,4 +1,4 @@
-package HW;
+package hw;
 
 public class Ch05_2_FizzBuzz {
 

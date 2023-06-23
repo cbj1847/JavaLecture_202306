@@ -1,4 +1,4 @@
-package Ch05;
+package ch05;
 
 import java.util.Arrays;
 import java.util.Random;
@@ -19,6 +19,7 @@ public class Ex06_MinMax {
 				max = score;
 		System.out.println("scores array의 최댓값 : " + max);
 		
+		// scores의 최솟값 구하기
 		int min = 100000000;
 		for (int score : scores)
 			if (score < min)

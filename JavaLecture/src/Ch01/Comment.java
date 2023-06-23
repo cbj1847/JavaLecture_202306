@@ -1,4 +1,4 @@
-package Ch01;
+package ch01;
 
 public class Comment {
 	/**

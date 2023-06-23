@@ -1,4 +1,4 @@
-package HW;
+package hw;
 
 public class Ch04_1_3 {
 
@@ -16,5 +16,4 @@ public class Ch04_1_3 {
 		System.out.println("입니다. ");
 	}
 	
-
 }

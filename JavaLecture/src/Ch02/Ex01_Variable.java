@@ -1,4 +1,4 @@
-package Ch02;
+package ch02;
 
 public class Ex01_Variable {
 	private int value = 20;
