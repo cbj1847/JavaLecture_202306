@@ -1,6 +1,5 @@
 package HW;
 
-import java.lang.reflect.Array;
 import java.util.Scanner;
 
 public class Ch05_2_6 {
@@ -54,6 +53,7 @@ public class Ch05_2_6 {
 				run = false;
 			}
 		}
+		scan.close();
 		System.out.println("프로그램 종료");
 		
 	}

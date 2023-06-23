@@ -1,10 +1,10 @@
-package Ch04;
+package HW;
 
 import java.time.LocalDate;
 import java.util.Scanner;
 
-public class Ex03_AmericanAge {
-
+public class Ch04_0_1 {
+	
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		System.out.print("생년월일 입력(ex.19960109) >> ");
@@ -22,5 +22,4 @@ public class Ex03_AmericanAge {
 		}
 		System.out.println("생년월일 : " + birth + " / 만 나이 : " + age);
 	}
-
 }

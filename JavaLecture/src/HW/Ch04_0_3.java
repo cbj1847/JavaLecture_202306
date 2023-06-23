@@ -1,9 +1,8 @@
-package Ch04;
+package HW;
 
 import java.util.Scanner;
 
-public class Ex05_Grade {
-
+public class Ch04_0_3 {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		System.out.print("점수 입력 >> ");

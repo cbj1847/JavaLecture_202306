@@ -1,9 +1,8 @@
-package Ch04;
+package HW;
 
 import java.util.Scanner;
 
-public class Ex04_Alarm {
-
+public class Ch04_0_2 {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		System.out.print("시간 입력(HHMM) >> ");

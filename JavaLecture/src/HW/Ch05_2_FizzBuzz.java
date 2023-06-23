@@ -15,8 +15,6 @@ public class Ch05_2_FizzBuzz {
 				System.out.printf("%d is Buzz!\n", i);
 			}
 		}
-		
-		
 	}
 
 }
