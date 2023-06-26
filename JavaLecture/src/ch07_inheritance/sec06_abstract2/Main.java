@@ -18,8 +18,15 @@ public class Main {
 		animal = pig;
 		animal.sound();
 		
+		// 매개변수의 자동 타입 변환
 		animalSound(cow);
 		animalSound(pig);
+		
+		Bird bird = new Sparrow();
+		System.out.println(bird.kind);
+		bird.fly();
+		bird.sound();
+		animalSound(bird);
 	}
 	
 	static void animalSound(Animal animal) {
