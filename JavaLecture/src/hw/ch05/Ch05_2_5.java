@@ -1,4 +1,4 @@
-package hw;
+package hw.ch05;
 
 public class Ch05_2_5 {
 

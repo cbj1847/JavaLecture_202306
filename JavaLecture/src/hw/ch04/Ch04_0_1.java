@@ -1,4 +1,4 @@
-package hw;
+package hw.ch04;
 
 import java.time.LocalDate;
 import java.util.Scanner;
