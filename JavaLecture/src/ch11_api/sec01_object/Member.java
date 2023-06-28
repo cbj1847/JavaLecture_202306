@@ -8,10 +8,15 @@ public class Member {
 		this.id = id;
 		this.name = name;
 	}
+	
+	public int getId() {
+		return 0;
+	}
 
 	@Override
 	public String toString() {
 		return "Member [id=" + id + ", name=" + name + "]";
 	}
+
 	
 }
