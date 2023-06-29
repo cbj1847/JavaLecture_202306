@@ -7,7 +7,7 @@ public interface BoardDAO {
 	
 	Board getBoard(int bid);					// bid 검색 결과 반환
 	
-	Board getBoardBySubject(String subject);	// subject 검색 결과 반환
+	Board getBoardByTitle(String title);	// subject 검색 결과 반환
 	
 	void insertBoard(Board board);
 	

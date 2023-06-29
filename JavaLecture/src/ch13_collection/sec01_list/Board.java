@@ -3,21 +3,26 @@ package ch13_collection.sec01_list;
 public class Board {
 	private int bid;
 	private String writer;
-	private String subject;
+	private String Title;
 	private String content;
 	
 	public Board() {}
 	
-	public Board(String writer, String subject, String content) {
+	public Board(String writer, String Title, String content) {
 		this.writer = writer;
-		this.subject = subject;
+		this.Title = Title;
 		this.content = content;
 	}
 	
-	public Board(int bid, String writer, String subject, String content) {
+	public Board(String Title, String content) {
+		this.Title = Title;
+		this.content = content;
+	}
+	
+	public Board(int bid, String writer, String title, String content) {
 		this.bid = bid;
 		this.writer = writer;
-		this.subject = subject;
+		this.Title = title;
 		this.content = content;
 	}
 
@@ -37,12 +42,13 @@ public class Board {
 		this.writer = writer;
 	}
 
-	public String getSubject() {
-		return subject;
+	public String getTitle() {
+		return Title;
 	}
 
-	public void setSubject(String subject) {
-		this.subject = subject;
+
+	public void setTitle(String title) {
+		this.Title = title;
 	}
 
 	public String getContent() {
@@ -55,7 +61,7 @@ public class Board {
 
 	@Override
 	public String toString() {
-		return "Board [bid=" + bid + ", writer=" + writer + ", subject=" + subject + ", content=" + content + "]";
+		return "Board [bid=" + bid + ", writer=" + writer + ", Title=" + Title + ", content=" + content + "]";
 	}
 	 
 	
