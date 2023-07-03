@@ -27,5 +27,13 @@ public class WordCount {
 		}
 		
 		// value로 sort
+		List<Map.Entry<String, Integer>> entryList = new ArrayList<>(map.entrySet());
+		// entryList.sort(Map.Entry.comparingByValue()); 		// value 오름차순 정렬
+		entryList.sort(new MyComparator());						// 내림차순
+		for (Map.Entry<String, Integer> entry : entryList) {
+			if (entry.getValue() >= 4)
+				System.out.println(entry.getKey() + ", " + entry.getValue());
+		}
+		
 	}
 }

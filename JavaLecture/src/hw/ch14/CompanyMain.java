@@ -23,10 +23,6 @@ public class CompanyMain {
 		hs.add(new Company(135, "김승규", Position.사원, LocalDate.of(2006, 9, 1)));
 		
 		
-		System.out.println(cpSet.size());
-		cpSet.forEach(x -> System.out.println(x));
-		
-		
 	}
 
 }
