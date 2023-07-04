@@ -113,7 +113,7 @@ SELECT GROUP_CONCAT(`Name`) FROM city WHERE district='kyonggi';
 SELECT GROUP_CONCAT(district) FROM city WHERE countrycode='kor';
 
 /*
- * 1.5 그룹 조건
+ * 1.6 그룹 조건
  */
 # 국내 도시의 갯수가 5개 이상인 도의 평균 인구수 탑 5
 SELECT district, ROUND(AVG(population)) AS avgPop FROM city WHERE countrycode='kor'
@@ -123,3 +123,33 @@ SELECT district, ROUND(AVG(population)) AS avgPop FROM city WHERE countrycode='k
 SELECT countrycode, COUNT(*) AS cityNum, ROUND(AVG(population)) AS avgPop FROM city 
     GROUP BY countrycode HAVING COUNT(*) >= 100 ORDER BY avgPop DESC;
 
+/*
+ * 1.7 Join
+ */
+# 인구수 800만 보다 큰 도시의 국가명, 도시명, 인구수
+SELECT r.Name countryName, l.Name cityName, l.Population FROM city AS l
+    JOIN country AS r ON l.CountryCode=r.Code		# (inner) JOIN에서 inner는 생략가능
+        WHERE l.Population > 8000000;
+
+# 아시아 대륙에서 인구수가 가장 많은 도시 Top 10
+SELECT l.Name countryName, r.Name cityName, l.Continent, r.Population FROM country AS l
+    JOIN city AS r ON l.Code=r.CountryCode
+    WHERE l.Continent='asia' ORDER BY r.population DESC LIMIT 10;
+
+# 우리나라의 공식 언어
+SELECT * FROM countrylanguage 
+    WHERE countrycode='kor' AND isofficial='T';
+    
+# 아시아 국가의 국가명과 공식언어
+SELECT l.name countryName, r.language officialLanguage, l.continent, percentage FROM country AS l 
+    JOIN countrylanguage AS r ON l.code=r.countrycode
+    WHERE r.isofficial='T' AND l.continent='asia';
+
+# 아시아 대륙에서 인구수가 가장 많은 Top 10 도시에서 사용하는 공식언어
+# 3개의 테이블 합치기 위해 2회의 JOIN 필요
+SELECT l.name, r.name, r.population, l.continent, o.language FROM country AS l
+    JOIN city AS r ON l.code = r.countrycode JOIN countrylanguage AS o
+    ON l.code = o.countrycode WHERE l.continent='asia' AND o.isofficial='T'
+    ORDER BY r.population DESC LIMIT 10;
+    
+ 
